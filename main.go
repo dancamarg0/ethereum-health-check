@@ -24,7 +24,7 @@ import (
 var conf = config.NewConfig()
 
 func ethScanURL(prefix, key string) string {
-	return fmt.Sprintf("https://%s.etherscan.io/api?module=proxy&action=eth_blockNumber&apikey=%s", prefix, key)
+	return fmt.Sprintf("https://%s.api.bscscan.com/api?module=proxy&action=eth_blockNumber&apikey=%s", prefix, key)
 }
 
 func (h *ETHHealth) getLocalBlockNumber() (int64, error) {
